@@ -7,10 +7,10 @@ safe:  false
 #Site config
 title: Jsvisa's Blog
 description: Jsvisa's blog. Powered by Jekyll
-keywords: Share Learn
+keywords: Share Learning
 # url: http://local
 feed: /atom.xml
-favicon: /images/june.png
+favicon: /images/me.png
 
 #Nav config
 nav:
@@ -29,29 +29,30 @@ production_url : http://username.github.io
 
 #Author config
 author:
-    name: June
+    name: Jsvisa
     email: delweng@gmail.com
-    imageLink: /images/june.jpg
-    simpleIntro: A coding farmer and vimer from Zhejiang University of Technology Hangzhou,China.
+    imageLink: /images/me.png
+    simpleIntro: 一个不会拼音的程序员
     detailIntro:
-      <p>这是一个使用Jekyll搭建的个人博客</p>
-      <p>Jekyll 是一个简洁的、特别针对博客平台的 静态网站 生成器。它使用一个模板目录作为网站布局的基础框架，并在其上运行 Textile 、 Markdown 或 Liquid 标记语言的转换器，最终生成一个完整的静态Web站点，可以被放置在Apache或者你喜欢的其他任何Web服务器上。它同时也是 GitHub Pages 、一个由 GitHub 提供的用于托管项目主页或博客的服务，在后台所运行的引擎。</p>
-      <p>使用 Jekyll 来写博客，可以很简单，写 Markdown 就好。然而，Jekyll 还很年轻，没有很多主题的支持。这里的主题，就是为 Jekyll 而写的。希望你能喜欢.</p>
+      <p>这是一个使用Jekyll搭建的个人博客, 这是一个记录个人学习工作经历的站点.</p>
+      <p>本站点使用了<a href="https://github.com/pizn">掌心同学</a>提供的模板, 如果你也喜欢这个模板,
+      可以访问<a href="https://github.com/pizn">掌心的github</a>获得.
+      </p>
 
 #Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
 follow:
   - class: icon-rss
     url: /atom.xml
   - class: icon-envelope
-    url: mailto:junevimer@gmail.com
+    url: mailto:delweng@gmail.com
   - class: icon-github
-    url: http://github.com/junewater
+    url: http://github.com/jsvisa
   - class: icon-weibo
-    url: http://weibo.com/junevimer
+    url: http://weibo.com/u/1839426822
   - class: icon-twitter
-    url: http://twitter.com
+    url: http://twitter.com/jsvisa
   - class: icon-google-plus
-    url: http://google.com
+    url: http://plus.google.com
 
 #Links
 customLinks:
@@ -68,7 +69,7 @@ customLinks:
   - item:
     - text: Font Awesome
       url: http://fortawesome.github.io/Font-Awesome/
-    - text: June_Water的博客
+    - text: Jsvisa_Water的博客
       url: http://blog.csdn.net/june_water
     - text: Linux资料
       url: http://blog.csdn.net/hejianhua/article/category/718084
@@ -84,8 +85,8 @@ googleAnaly:
 #comment config
 disqus:
   config: false
-  id: piznblog
+  id: jsvisa
 
 duoshuo:
   config: true
-  id: Junevimer
+  id: jsvisa
