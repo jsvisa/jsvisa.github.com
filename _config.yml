@@ -5,10 +5,10 @@ paginate: 8
 safe:  false
 
 #Site config
-title: June's Blog
-description: June's blog.Powered by Jekyll
-keywords: June Linux
-url: http://junewater.github.io
+title: Jsvisa's Blog
+description: Jsvisa's blog. Powered by Jekyll
+keywords: Share Learn
+# url: http://local
 feed: /atom.xml
 favicon: /images/june.png
 
@@ -16,7 +16,7 @@ favicon: /images/june.png
 nav:
   - text: 首页
     url: /index.html
-  - text: 分类目录 
+  - text: 分类目录
     url: /categories.html
   - text: 文章归档
     url: /archives.html
@@ -25,10 +25,12 @@ nav:
   - text: 友情链接
     url: /links.html
 
+production_url : http://username.github.io
+
 #Author config
 author:
     name: June
-    email: junevimer@gmail.com
+    email: delweng@gmail.com
     imageLink: /images/june.jpg
     simpleIntro: A coding farmer and vimer from Zhejiang University of Technology Hangzhou,China.
     detailIntro:
