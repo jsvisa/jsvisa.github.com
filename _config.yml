@@ -57,22 +57,50 @@ follow:
 #Links
 customLinks:
   - item:
+    - text: 极客公园
+      url: http://www.geekpark.net
+    - text: GeekFan-Raspberry
+      url: http://www.geekfan.net/category/hardware/raspberry-pi-hardware/
+    message: 智能硬件
+  - item:
     - text: 酷壳
       url: http://coolshell.cn/
     - text: 伯乐在线
       url: http://www.jobbole.com/
+    - text: HackNews
+      url: https://news.ycombinator.com
+    - text: Startup News
+      url: http://news.dbanotes.net/
     - text: 何登成的技术博客
       url: http://hedengcheng.com/
     - text: Vimer的程序世界
       url: http://www.vimer.cn/
+    - text: GitGuy
+      url: http://www.gitguys.com/topics/
+    - text: 阮一峰的网络日志
+      url: http://www.ruanyifeng.com/blog/
     message: 技术博客
+  - item:
+    - text: Rails 实战圣经
+      url: http://ihower.tw/rails3/index.html
+    - text: Ruby on Rails 教程
+      url: http://railstutorial-china.org
+    - text: HappyCast
+      url: http://happycasts.net
+    - text: JavaScript 标准教程
+      url: http://javascript.ruanyifeng.com/
+    message: 技术教程
+  - item:
+    - text: rubular
+      url: http://rubular.com/
+    - text: img2txt(ascii字符画)
+      url: http://www.cssha.com/img2txt/
+    - text: pdf2mobi
+      url: http://www.pdf4kindle.com/
+    message: 工具类
   - item:
     - text: Font Awesome
       url: http://fortawesome.github.io/Font-Awesome/
-    - text: Jsvisa_Water的博客
-      url: http://blog.csdn.net/june_water
-    - text: Linux资料
-      url: http://blog.csdn.net/hejianhua/article/category/718084
     - text: Vimer Scripts
       url: http://vim-scripts.org/vim/scripts.html
     message: 其他相关链接
