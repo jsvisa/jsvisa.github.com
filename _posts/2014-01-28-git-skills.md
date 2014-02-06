@@ -59,7 +59,7 @@ tags: []
 9. 克隆指定的远程分支, 如果你希望只克隆远程仓库的一个指定分支，而不是整个仓库分支:
 
         git init
-        git remote add --track BRANCH_NAME --feature origin REMOTE_REPO_URL_PATH
+        git remote add --track BRANCH_NAME --fetch origin REMOTE_REPO_URL_PATH
         git checkout BRANCH_NAME
 
 10. `git push [remote_name] [local_branch]:[remote_branch]`
@@ -108,6 +108,27 @@ tags: []
 
         1. git format-patch 生成一个补丁包；
         2. git am 1.patch 这种方法生成的补丁包中含有补丁开发者的名字，应用补丁时名字会被记录到版本库中。
+
+14. 修改 git 提交历史
+
+    git 使用 `amend` 选项提供了**当前**最后一次提交的反悔机会，但是对于历史提交就必须使用 rebase 选项了:
+
+    如果要修改当前版本的倒数第三次提交状态, 可使用下列命令先列出后三次提交历史:
+
+        git rebase -i HEAD~3
+    这个命令出来之后，会出来三行文本:
+
+        pick:*******
+        pick:*******
+        pick:*******
+    如果你要修改哪个，就把那行的 `pick` 改成 `edit`，然后退出。
+    这时通过 `git log` 你可以发现，git的最后一次提交已经变成你选的那个了，这时再使用：
+
+        git commit --amend
+    来对commit进行修改。修改完了之后使用
+
+        git rebase --continue
+    执行完这一系列指令之后就一切 ok 了。
 
 ##子模块
 当 `clone` 一个带 **submodule** 的仓库时，`clone` 后需要先做 `git submodule init` 后再做
