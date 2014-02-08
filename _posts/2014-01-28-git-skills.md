@@ -148,12 +148,12 @@ tags: []
 
 如果要完全删除一个子模块，需要分步执行几下几步：
 
-    1. *.gitmodules* 中删除相应的子模块, 这步执行之后可以先将当前状态 stage 一下: `git add .gitmodules`；
-    2. *.git/config* 中删除相应的子模块；
-    3. `git rm --cached path_to_submodule` 从 index 中删除相应的子模块；
-    4. `rm -rf .git/modules/path_to_submodule`
-    5. `git commit -m` 将 *.gitmodules*
-    6. `rm -rf path_to_submodule` 完全删除未跟踪的子模块
+    1. .gitmodules 中删除相应的子模块, 这步执行之后可以先将当前状态 stage 一下: git add .gitmodules；
+    2. .git/config 中删除相应的子模块；
+    3. git rm --cached path_to_submodule 从 index 中删除相应的子模块；
+    4. rm -rf .git/modules/path_to_submodule
+    5. git commit -m 将 .gitmodules 提交一下
+    6. rm -rf path_to_submodule 完全删除未跟踪的子模块
 
 从当前项目中递归删除一个文件 Remove existing files from the repository:
 
