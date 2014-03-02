@@ -1,15 +1,16 @@
 ---
 layout: post
 title: "Ubuntu 升级后找不到 grub， 进不了系统处理"
-description: "Ubuntu, Win 双系统下，Ubuntu 升级后找不到grub 引导文件处理"
+description: ""
 category: "Linux"
 tags: [skill]
 
 ---
 
-今天整理Evernote的时候看到的以前的升级 Ubuntu 时的一点总结。
+Ubuntu, Win 双系统下，Ubuntu 升级后找不到grub 引导文件处理
 
-是这样的，在刚毕业那会儿, 那时买不起 Mac, 但是出于对Unix 的热爱，不得已在我的 ThinkPad X200s 上装了个Ubuntu 12.04,
+今天整理Evernote的时候看到的以前的升级 Ubuntu 时的一点总结。 是这样的，在刚毕业那会儿, 那时买不起 Mac,
+但是出于对Unix 的热爱，不得已在我的 ThinkPad X200s 上装了个Ubuntu 12.04,
 那时还不想完全放开Win, 就装了个双系统，双系统的安装方式有很多，而我也选择的常规的 [EasyBCD](http://neosmart.net/EasyBCD/)
 引导安装，安装完成后我在 Ubuntu 那边又设置了 grub 2 引导整个系统，把 EasyBCD 扔到一边去了，也就是我原来的Win
 也是通过Grub 2 来引导的， 就这样用了一段时间。
@@ -31,18 +32,18 @@ tags: [skill]
     3. 重启 PC, 选择从 U 盘启动
     4. 启动后输入:
 
-        boot# unetbootindefault
+            boot# unetbootindefault
 
 2. 启动阶段的事情完成了， 接下来是修复安装 grub2:
 
-            $sudo mount /dev/sdXY /mnt          #X是驱动器的名，Y 为分区号， 就是你的Ubuntu 安装的硬盘分区
-            $sudo mount --bind /dev /mnt/dev && sudo mount --bind /dev/pts /mnt/dev/pts && sudo mount --bind /proc /mnt/proc && sudo mount --bind /sys /mnt/sys
-            $sudo chroot /mnt
-            #grub-install /dev/sdX
-            #grub-install --recheck /dev/sdX
-            #update-grub
-            #exit && sudo umount /mnt/dev && sudo umount /mnt/dev/pts && sudo umount /mnt/proc && sudo umount /mnt/sys && sudo umount /mnt
-            #reboot
+        $sudo mount /dev/sdXY /mnt          #X是驱动器的名，Y 为分区号， 就是你的Ubuntu 安装的硬盘分区
+        $sudo mount --bind /dev /mnt/dev && sudo mount --bind /dev/pts /mnt/dev/pts && sudo mount --bind /proc /mnt/proc && sudo mount --bind /sys /mnt/sys
+        $sudo chroot /mnt
+        #grub-install /dev/sdX
+        #grub-install --recheck /dev/sdX
+        #update-grub
+        #exit && sudo umount /mnt/dev && sudo umount /mnt/dev/pts && sudo umount /mnt/proc && sudo umount /mnt/sys && sudo umount /mnt
+        #reboot
 
 3. 这一系列的操作完成后，你的grub 就能完美引导 Ubuntu了
 
