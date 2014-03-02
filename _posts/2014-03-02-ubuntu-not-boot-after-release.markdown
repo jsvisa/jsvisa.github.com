@@ -24,7 +24,7 @@ tags: [skill]
 
 1. 使用U盘启动
 
-    1. 使用类似 [ubootin](http://unetbootin.sourceforge.net） 制件一个U盘启动盘
+    1. 使用类似 [ubootin](http://unetbootin.sourceforge.net) 制件一个U盘启动盘
     2. U盘启动盘 制件完毕后，找到 U 盘下面的 *./syslinux.cfg* 文件，注释掉第一行
 
             #default menu.c32
